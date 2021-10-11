@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Forum', cursive;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    padding: 0 10em;
+    position: relative;
+}
+.headerTop{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 25px 0 30px 0;
+}
+.Logo{
+    display: flex;
+    
+}
+.Logo img{
+    margin-right: 1em;
+}
+.topLogo{
+    margin-right: 2em;
+}
+.topLogo img{
+    display: block;
+    width:  30px;
+    height: 50px;
+}
+.topLogo p{
+    padding-top: 5%;
+    font-size: 40px;
+}
+.headerContacts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10em;
+}
+.adress {
+    display: flex;
+    margin-bottom: 20px;
+}
+.adress img{
+    margin-right: 0.5em;
+}
+.adressText p{
+    color: black;
+    font-size: 18px;
+}
+.adressText .metro{
+    display: flex;
+}
+.adressText .metro p{
+    font-size: 16px;
+}
+.headerPhone{
+    display: flex;
+    flex-direction: row;
+}
+.headerPhone img{
+    width: 11px;
+    height: 20px;
+    margin-right: 1em;
+}
+.headerPhoneText a{
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+.schedule{
+    display: flex;
+    margin-right: 10em;
+}
+.schedule img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+.scheduleText p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0.5em;
+}
+.societies{
+    display: flex;
+}
+.societies img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5em;
+}
+.appointment{
+    display: flex;
+    flex-direction: column;
+}
+.appointmentOnline{
+    padding: 10px;
+    background: #DBC88D;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    color: black;
+}
+.call{
+    font-size: 12px;
+    color: #7C7C7C;
+    text-decoration: underline;
+    text-align: center;
+}
+.headerBottom{
+    display: flex;
+    padding-left: 0.5em;
+}
+.bottomLogo{
+    margin: 0.5em 8em 2em 0;
+}
+.bottomLogo img{
+    display: block;
+    width:  20px;
+    height: 30px;
+}
+.bottomLogo p{
+    padding-top: 5%;
+    font-size: 22px;
+}
+nav ul{
+    display: flex;
+    margin-top: 1em;
+}
+nav ul li{
+    margin-right: 7em;
+}
+nav ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid #000;
+}
+.nav-active{
+    left: 0;
+}
+
+.burger{
+    margin-top: 1em;
+    cursor: pointer;
+    display: none;
+}
+.burger img{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 800%;
+    height: 600px;
+    transition: .3s;
+    position: relative;
+}
+.pagin{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    left: 80%;
+    top: 83%;
+}
+.pg{
+    z-index: 10;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin-right: 0.5em;
+    opacity: 0.3;
+    transition: .3s;
+}
+.pgAct{
+    opacity: 0.9;
+}
+.slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 130px 0 70px 160px;
+}
+.slide img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.slide h2{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+.slide p{
+    font-size: 24px;
+    max-width: 620px;
+    color: black;
+    margin-bottom: 30px;
+}
+.slide1{
+    background: url('../img/slide1.png') center center/cover no-repeat;
+    position: relative;
+}
+.slide1 .slideText{
+    position: absolute;
+    right: 10%;
+}
+.slide2{
+    background: url('../img/slide2.png') center center/cover no-repeat;
+}
+.slide3{
+    background: url('../img/slide3.png') center center/cover no-repeat;
+}
+.slide4{
+    background: url('../img/slide4.png') center center/cover no-repeat;
+}
+.slide5{
+    background: url('../img/slide5.png') center center/cover no-repeat;
+}
+.slide6{
+    background: url('../img/slide6.png') center center/cover no-repeat;
+}
+.slide7{
+    background: url('../img/slide7.png') center center/cover no-repeat;
+}
+.slide8{
+    background: url('../img/slide8.jpg') center center/cover no-repeat;
+}
+
+
+.services{
+    padding: 100px 160px;
+}
+.servicesHeading{
+    display: flex;
+    margin-bottom: 1em;
+}
+.servicesHeading h2{
+    font-size: 40px;
+    color: rgba(72, 54, 50, 0.95);
+    margin-left: 0.5em;
+}
+.servicesLine{
+    display: flex;
+    margin-bottom: 2em;
+}
+.servicesBlock{
+    display: flex;
+    margin-right: 10em;
+    border-radius: 0px 8px 8px 0px;
+}
+.servicesBlock img{
+    width: 140px;
+    height: 200px;
+}
+.servicesBlockText{
+    width: 212px;
+    border-radius: 0px 8px 8px 0px;
+    background: #F2E9CF;
+    padding: 43px 0 20px 20px;
+    position: relative;
+}
+.servicesBlockText a{
+    position: absolute;
+    bottom: 10%;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.news{
+    background: rgba(185, 230, 255, 0.79);
+    padding: 80px 160px ;
+    overflow: hidden;
+    position: relative;
+}
+.newsHeading{
+    display: flex;
+    margin-bottom: 3em;
+}
+.newsHeadingText h2{
+    font-size: 40px;
+    color: rgba(72, 54, 50, 0.95);
+}
+.newsHeadingText a{
+    font-size: 14px;
+    color: #7C7C7C;
+}
+.newsSlider{
+    
+    display: flex;
+    transition: 0.3s;
+    width: 800%;
+}
+.newsSlide{
+    width: 25vw;
+    margin-right: 2em;
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+    position: relative;
+}
+.newsSlide img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.newsSlide h3{
+    margin: 1em 0 0.5em 2em;
+    width: 90%;
+    font-size: 18px;
+}
+.newsSlide p{
+    margin-left: 2em;
+    width: 90%;
+    font-size: 16px;
+}
+.newsSlide a{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 28px;
+    color: black;
+}
+.newsSliderButtons{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+.newsSliderButtons div{
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.whyUs{
+    padding: 88px 160px;
+    display: block;
+    position: relative;
+}
+.whyUsHeading{
+    display: flex;
+    margin-bottom: 3em;
+}
+.whyUsHeading h2{
+    font-size: 40px;
+    color: rgba(72, 54, 50, 0.95);
+    margin-left: 0.5em;
+}
+.whyUsLine{
+    display: flex;
+    margin-bottom: 2em;
+}
+.whyUsBlock{
+    display: flex;
+    width: 33vw;
+    margin-right: 3em;
+}
+.whyUsBlock img{
+    width: 40px;
+    height: 40px;
+}
+.whyUsBlock p{
+    margin: 0.3em 0 0 1em ;
+    font-size: 20px;
+    color: black;
+}
+.whyUsSlider{
+    display: flex;
+    width: 800%;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 2em;
+}
+.whyUsSlide{
+    width: 80%;
+    height: 830px;
+    overflow: hidden;
+}
+.whyUsSlide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.whyUsSliderPG{
+    display: flex;
+}
+.whyUsSliderPG img{
+    width: 160px;
+    height: 127px;
+    margin-right: 0.5em;
+    transition: 0.3s;
+}
+.whyUsSliderPGAct{
+    border: 2px solid blue;
+}
+.whyUsSliderButtons{
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    right: 15%;
+}
+.whyUsSliderButtons div{
+    z-index: 10;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1767px) {
+    header{
+        padding: 0;
+    }
+    .headerTop{
+        padding: 25px 10em;
+    }
+    .headerBottom{
+        width: 100vw;
+        height: 100vw;
+        left: -101vw;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0 0 0 ;
+        text-align: center;
+        background: rgba(23, 151, 255, 0.712);
+        transition: 0.3s;
+    }
+    .bottomLogo{
+        margin: 0;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bottomLogo img{
+        display: block;
+        width:  20px;
+        height: 30px;
+    }
+    .bottomLogo p{
+        padding: 0;
+        font-size: 22px;
+        color: white;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    nav ul li{
+        margin-bottom: 1em;
+    }
+    nav ul li a {
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    nav ul li a:hover{
+        border-bottom: 1px solid #000;
+    }
+    .nav-active{
+        left: 0;
+    }
+    .burger{
+        position: absolute;
+        margin: 1em;
+        right: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+    }
+}
